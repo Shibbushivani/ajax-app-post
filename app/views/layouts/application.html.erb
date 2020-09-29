@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails Ajax Examples | Steve Polito Design</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body class="pb-5">
+      <%= render 'shared/header' %>
+      <%= render 'shared/flash' %>
+      <div class="container">
+        <%= yield %>
+      </div>
+      <%= render 'shared/debug' %>
+  </body>
+</html>
